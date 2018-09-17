@@ -23,6 +23,7 @@ public class UserController {
 	public String findAllUsers(Model model)
 	{
 	model.addAttribute("users",userService.allUsers());
+	System.out.println("jenkins");
 	return "/user/list";
 	}
 
